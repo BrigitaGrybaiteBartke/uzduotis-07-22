@@ -1,4 +1,3 @@
-
 let masyvas = []
 
 let inputItem = document.querySelector('input[data-type="#inputItem"]')
@@ -25,15 +24,12 @@ const renderTable = (array) => {
         html += `   </tbody>
             </table>`
 
-
         result.innerHTML = html
 
     } else {
         result.innerHTML = `<p class="text-center mt-4">Krepšelyje kol kas neturite jokių prekių!</p>`
-
         }
 }
-
 
 // ENTER button:
 buttonEnter.addEventListener('click', (event) => {
@@ -52,7 +48,6 @@ buttonEnter.addEventListener('click', (event) => {
 const removeItem = (index) => {
     console.log(index)
     document.querySelectorAll('tr td')[index].remove()
-    
     masyvas.splice(index, 1)
     renderTable(masyvas)       
 }
